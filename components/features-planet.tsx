@@ -59,7 +59,7 @@ export default function FeaturesPlanet() {
                       alt="Tag 03"
                     />
                     <Image
-                      className="absolute bottom-12 left-8 z-10 animate-[float_4s_ease-in-out_infinite_3s_both] opacity-80 transition-opacity duration-500"
+                      className="absolute bottom-12 left-88 z-10 animate-[float_4s_ease-in-out_infinite_3s_both] opacity-80 transition-opacity duration-500"
                       src={PlanetTagImg04}
                       width={150}
                       height={56}

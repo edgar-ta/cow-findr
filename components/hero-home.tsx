@@ -6,6 +6,7 @@ import Avatar03 from "@/public/images/Vaca4.jpg";
 import Avatar04 from "@/public/images/Vaca5.jpg";
 import Avatar05 from "@/public/images/Vaca6.jpg";
 import Avatar06 from "@/public/images/vaca1.jpg";
+import Link from "next/link";
 
 export default function HeroHome() {
   return (
@@ -86,9 +87,9 @@ export default function HeroHome() {
                   data-aos="zoom-y-out"
                   data-aos-delay={450}
                 >
-                  <a
+                  <Link
                     className="btn group mb-4 w-full bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                    href="#0"
+                    href="/signin"
                   >
                     <span className="relative inline-flex items-center">
                       Start Free Trial{" "}
@@ -96,13 +97,7 @@ export default function HeroHome() {
                         -&gt;
                       </span>
                     </span>
-                  </a>
-                  <a
-                    className="btn w-full bg-white text-gray-800 shadow-sm hover:bg-gray-50 sm:ml-4 sm:w-auto"
-                    href="#0"
-                  >
-                    Learn More
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

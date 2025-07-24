@@ -1,91 +1,114 @@
-# Free Tailwind landing page template
 
-![Simple TailwindCSS template preview](https://github.com/cruip/tailwind-landing-page-template/assets/2683512/f9a98fab-a1bc-4fb5-8572-4de0b6bd932a)
 
-**Simple Light** is a free landing page template built on top of **TailwindCSS** and fully coded in **React** / **Next.js**. Simple light is designed to provide all the basic components a developer need to create a landing page for SaaS products, online services, and more.
+# 🐄 CowFindr — Smart Collar for Precision Livestock Farming
 
-**UPDATE 2025-02-04** Added Tailwind v4 support!
+![CowFindr preview](./public/images/cow-findr-logo--cropped.jpeg)
 
-Use it for whatever you want, and be sure to reach us out on X if you build anything cool/useful with it.
-Created and maintained with ❤️ by [Cruip.com](https://cruip.com/).
+**CowFindr** is a non-invasive smart collar designed to revolutionize livestock management in rural areas through real-time monitoring of biometric and environmental parameters. Built with cutting-edge technologies like **IoT**, **Artificial Intelligence**, **solar energy**, and **nanotechnology**, CowFindr helps detect early health risks and improve animal welfare and productivity.
 
-_Version 1.3.3 built with Tailwind CSS and React + Vite is available [here](https://github.com/cruip/tailwind-landing-page-template/releases/tag/1.3.3)._
+> 💡 **Built with:** ESP32, GPS, IMU, THI sensors.
 
-## Live demo
+---
 
-Check the live demo here 👉️ [https://simple.cruip.com/](https://simple.cruip.com/)
+## 🚀 Live Demo
 
-## Simple Pro
+🟢 You can now visit the live demo here :https://cow-findr.vercel.app/
 
-[![Simple Pro](https://github.com/cruip/tailwind-landing-page-template/assets/2683512/992be2ba-3de7-4838-be41-12e85686c193)](https://cruip.com/)
+---
 
-## Design files
+## 📘 Introduction
 
-If you need the design files, you can download them from Figma's Community 👉 https://bit.ly/3HOZMpf
+The livestock industry faces increasing challenges in health control, efficiency, and animal welfare—especially in rural zones. CowFindr proposes a complete solution with:
 
-## Usage
+- Biometric + environmental monitoring  
+- Real-time alerts for diseases, estrus, and prepartum  
+- GPS tracking and IoT connectivity  
+- Solar energy autonomy and nanotechnology protection  
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Aimed at transforming livestock into a **proactive, automated, and data-driven** industry.
 
-### Getting Started
+---
 
-First, run the development server:
+## 🎯 Objectives
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### General
+Develop a smart, non-invasive collar capable of real-time biometric and environmental monitoring to enable predictive and sustainable herd management.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Specific
+1. Design a sensor-integrated, portable and autonomous device for livestock.
+2. Apply AI to detect abnormal behavior or early illness indicators.
+3. Ensure durability and energy efficiency with solar energy and functional nanocoating.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## 🧪 Hypothesis
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+The integration of biometric/environmental sensors, GPS,IoT in CowFindr will allow early and accurate detection of health issues, reducing losses and enhancing animal welfare in rural environments.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+---
 
-### Learn More
+## 🔧 Project Development
 
-To learn more about Next.js, take a look at the following resources:
+### 🧠 Embedded System
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Microcontroller:** ESP32 for low-power dual-core processing + Wi-Fi
+- **Sensors:**
+  - BMX160 (9-axis IMU)
+  - BMP388 (temperature & pressure for THI)
+  - GY-GPS6MV2 (real-time GPS)
+- **Communication:** I²C + UART + MQTT over Wi-Fi
+- **Firmware:** Developed in Arduino IDE with interrupt-based routines, deep sleep cycles, and thresholding logic
+- **THI modeling:** Combines BMP388 data + external weather APIs (e.g. NOAA)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### 🌐 Web Platform
 
-### Deploy on Vercel
+- **Frontend:** Built with Next.js (React) + Vercel for CI/CD
+- **Backend:** Firebase (Firestore, Authentication, Cloud Storage)
+- **Features:**
+  - Real-time dashboards (temperature, motion, THI, GPS)
+  - Secure user access for farmers/researchers
+  - Map view via Leaflet or Google Maps
+  - Alerts generated by AI-based risk predictions
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### ⚗️ Nanotechnology Coating
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **TiO₂** (UV protection), **ZnO** (antimicrobial), **SiO₂** (hydrophobic)
+- Applied via **dip-coating** in epoxy matrix (EPON 828 + DETA)
+- Validated through:
+  - Hydrophobicity test (contact angle > 100°)
+  - UV resistance (UV-A lamp)
+  - Antimicrobial activity (Kirby-Bauer)
+  - Mechanical durability (ASTM D3359)
 
-### Support notes
+### 🧩 Physical Design
 
-This template has been developed with the App Router (`app`) and React Server Components. If you’re unfamiliar with these beta features, you can find more information about them on the Next.js beta documentation page. So, please note that any request dealing with React (e.g. extra features, customisations, et cetera) is to be considered out of the support scope.
+- CAD modeled in **SolidWorks**
+- 3D printed semiflexible collar using polymer materials
+- Integrated curved **semiflexible solar panel** + power manager
+- Tested for animal ergonomics, durability, and real-world fit
 
-For more information about what support covers, please see our (FAQs)[https://cruip.com/faq/].
+---
 
-## Credits
+## 📈 Expected Results
 
-- [Nucleo](https://nucleoapp.com/)
+- ✅ Accurate GPS and motion-based health tracking
+- ✅ Automated alerts for estrus, prepartum, distress
+- ✅ Reduced economic losses and improved animal care
+- ✅ Workload reduction for farmers
+- ✅ Environmental sustainability through solar + data-driven decisions
 
-## Terms and License
+---
 
-- Released under the [GPL](https://www.gnu.org/licenses/gpl-3.0.html).
-- Copyright 2024 [Cruip](https://cruip.com/).
-- Use it for personal and commercial projects, but please don’t republish, redistribute, or resell the template.
-- Attribution is not required, although it is really appreciated.
+## ⚙️ Technologies Used
 
-## About Us
+| Area          | Tools / Tech                     |
+|---------------|----------------------------------|
+| Firmware      | Arduino IDE, C++, MQTT, IMU/GPS |
+| AI / Inference| Thresholds (onboard), scalable ML |
+| Web frontend  | Next.js, React, Vercel           |
+| Backend       | Firebase, Firestore              |
+| Dashboard     | Recharts, Chart.js, Leaflet      |
+| Hardware      | ESP32, Solar, Sensors, 3D Print  |
+| CAD & Coating | SolidWorks, TiO₂ / ZnO / SiO₂    |
 
-We're an Italian developer/designer duo creating high-quality design/code resources for developers, makers, and startups.
-
-## Stay in the loop
-
-If you would like to know when we release new resources, you can follow [@pacovitiello](https://x.com/pacovitiello) and [@DavidePacilio](https://x.com/DavidePacilio) on X, or you can subscribe to our [newsletter](https://cruip.com/newsletter/).
-
+> 🐮 *CowFindr – The smart collar for a healthier, smarter herd.*
