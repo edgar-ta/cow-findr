@@ -1,11 +1,11 @@
 import Image from "next/image";
 import PageIllustration from "@/components/page-illustration";
-import Avatar01 from "@/public/images/avatar-01.jpg";
-import Avatar02 from "@/public/images/avatar-02.jpg";
-import Avatar03 from "@/public/images/avatar-03.jpg";
-import Avatar04 from "@/public/images/avatar-04.jpg";
-import Avatar05 from "@/public/images/avatar-05.jpg";
-import Avatar06 from "@/public/images/avatar-06.jpg";
+import Avatar01 from "@/public/images/Vaca2.jpg";
+import Avatar02 from "@/public/images/Vaca3.jpg";
+import Avatar03 from "@/public/images/Vaca4.jpg";
+import Avatar04 from "@/public/images/Vaca5.jpg";
+import Avatar05 from "@/public/images/Vaca6.jpg";
+import Avatar06 from "@/public/images/vaca1.jpg";
 
 export default function HeroHome() {
   return (
@@ -24,43 +24,43 @@ export default function HeroHome() {
                 <Image
                   className="box-content rounded-full border-2 border-gray-50"
                   src={Avatar01}
-                  width={32}
-                  height={32}
+                  width={52}
+                  height={52}
                   alt="Avatar 01"
                 />
                 <Image
                   className="box-content rounded-full border-2 border-gray-50"
                   src={Avatar02}
-                  width={32}
-                  height={32}
+                  width={52}
+                  height={52}
                   alt="Avatar 01"
                 />
                 <Image
                   className="box-content rounded-full border-2 border-gray-50"
                   src={Avatar03}
-                  width={32}
-                  height={32}
+                  width={52}
+                  height={52}
                   alt="Avatar 02"
                 />
                 <Image
                   className="box-content rounded-full border-2 border-gray-50"
                   src={Avatar04}
-                  width={32}
-                  height={32}
+                  width={52}
+                  height={52}
                   alt="Avatar 03"
                 />
                 <Image
                   className="box-content rounded-full border-2 border-gray-50"
                   src={Avatar05}
-                  width={32}
-                  height={32}
+                  width={52}
+                  height={52}
                   alt="Avatar 04"
                 />
                 <Image
                   className="box-content rounded-full border-2 border-gray-50"
                   src={Avatar06}
-                  width={32}
-                  height={32}
+                  width={52}
+                  height={52}
                   alt="Avatar 05"
                 />
               </div>
@@ -70,8 +70,7 @@ export default function HeroHome() {
               data-aos="zoom-y-out"
               data-aos-delay={150}
             >
-              The solution you're <br className="max-lg:hidden" />
-              looking for
+              Cow Findr <br className="max-lg:hidden" />
             </h1>
             <div className="mx-auto max-w-3xl">
               <p
@@ -79,8 +78,7 @@ export default function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
-                Simple is a modern website builder powered by AI that changes
-                how companies create user interfaces together.
+                A smart collar designed for livestock capable to real time monitoring diferent variables
               </p>
               <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]">
                 <div
@@ -109,44 +107,24 @@ export default function HeroHome() {
               </div>
             </div>
           </div>
-          {/* Hero image */}
-          <div
-            className="mx-auto max-w-3xl"
-            data-aos="zoom-y-out"
-            data-aos-delay={600}
-          >
-            <div className="relative aspect-video rounded-2xl bg-gray-900 px-5 py-3 shadow-xl before:pointer-events-none before:absolute before:-inset-5 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] after:absolute after:-inset-5 after:-z-10 after:border-x after:[border-image:linear-gradient(to_bottom,transparent,--theme(--color-slate-300/.8),transparent)1]">
-              <div className="relative mb-8 flex items-center justify-between before:block before:h-[9px] before:w-[41px] before:bg-[length:16px_9px] before:[background-image:radial-gradient(circle_at_4.5px_4.5px,var(--color-gray-600)_4.5px,transparent_0)] after:w-[41px]">
-                <span className="text-[13px] font-medium text-white">
-                  cruip.com
-                </span>
-              </div>
-              <div className="font-mono text-gray-500 [&_span]:opacity-0">
-                <span className="animate-[code-1_10s_infinite] text-gray-200">
-                  npm login
-                </span>{" "}
-                <span className="animate-[code-2_10s_infinite]">
-                  --registry=https://npm.pkg.github.com
-                </span>
-                <br />
-                <span className="animate-[code-3_10s_infinite]">
-                  --scope=@phanatic
-                </span>{" "}
-                <span className="animate-[code-4_10s_infinite]">
-                  Successfully logged-in.
-                </span>
-                <br />
-                <br />
-                <span className="animate-[code-5_10s_infinite] text-gray-200">
-                  npm publish
-                </span>
-                <br />
-                <span className="animate-[code-6_10s_infinite]">
-                  Package published.
-                </span>
-              </div>
-            </div>
-          </div>
+          {/* Hero video */}
+<div
+  className="mx-auto max-w-3xl"
+  data-aos="zoom-y-out"
+  data-aos-delay={600}
+>
+  <div className="relative aspect-video rounded-2xl overflow-hidden shadow-xl">
+    <video
+      className="w-full h-full object-cover"
+      src="/videos/videovacas.mp4" // Cambia esto por la ruta real de tu video
+      autoPlay
+      loop
+      muted
+      playsInline
+    />
+  </div>
+</div>
+
         </div>
       </div>
     </section>
