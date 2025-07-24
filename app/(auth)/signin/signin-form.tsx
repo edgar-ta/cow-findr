@@ -12,34 +12,34 @@ export default function SignInForm() {
   
     const router = useRouter();
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
-    setError("");
+    const handleSubmit = async (e: React.FormEvent) => {
+      e.preventDefault();
+      setLoading(true);
+      setError("");
 
-    try {
-      const response = await fetch("/api/sign-in", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email, password }),
-      });
+      try {
+        const response = await fetch("/api/sign-in", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email, password }),
+        });
 
-      const data = await response.json();
+        const data = await response.json();
 
-      if (!response.ok) {
+        if (!response.ok) {
+          setLoading(false);
+          setError(data.error || "An error occurred during sign-in.");
+          return;
+        }
+
         setLoading(false);
-        setError(data.error || "An error occurred during sign-in.");
-        return;
+        router.push("/dashboard"); // Redirect to /dashboard on success
+      } catch (err) {
+        setLoading(false);
+        setError("An error occurred during sign-in.");
       }
-
-      setLoading(false);
-      router.push("/dashboard"); // Redirect to /dashboard on success
-    } catch (err) {
-      setLoading(false);
-      setError("An error occurred during sign-in.");
-    }
   };
 
   return (
